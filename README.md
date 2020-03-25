@@ -18,7 +18,7 @@ This sample is a modified version of [80.skills-simple-bot-to-bot](https://githu
 
 class SignRequestAppCredentials extends CertificateAppCredentials {
     async signRequest(webResource) {
-        webResource.headers.set('x-api-key', 'key value here');
+        webResource.headers.set('x-api-key', process.env.xapikey);
         const token = await this.getToken();
         return new msrest.TokenCredentials(token).signRequest(webResource);
     }
