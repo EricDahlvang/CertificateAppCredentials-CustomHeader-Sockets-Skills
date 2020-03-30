@@ -72,9 +72,9 @@ class CustomCredentialsBotFrameworkAdapter extends BotFrameworkAdapter {
     npm start
     ```
 
-## Testing the bot using Cognitive-Services-Direct-Line-Speech-Client
+## Testing the bot using Windows Voice Assistant Client
 
-[Direct Line Speech Client](https://github.com/Azure-Samples/Cognitive-Services-Direct-Line-Speech-Client) is a desktop application that allows bot developers to test and debug their bots on localhost or running remotely through a tunnel. 
+[Windows Voice Assistant Client](https://github.com/Azure-Samples/Cognitive-Services-Voice-Assistant/tree/master/clients/csharp-wpf) is a Windows desktop application that allows bot developers to test and debug their bots on localhost or running remotely through a tunnel. 
 
 For more information, see [tutorial-voice-enable-your-bot-speech-sdk](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/tutorial-voice-enable-your-bot-speech-sdk)
 
