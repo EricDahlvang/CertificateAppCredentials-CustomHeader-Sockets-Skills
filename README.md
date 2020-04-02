@@ -40,12 +40,12 @@ class CustomCredentialsBotFrameworkAdapter extends BotFrameworkAdapter {
     git clone https://github.com/EricDahlvang/CertificateAppCredentials-CustomHeader-Sockets-Skills.git
     ```
 
-- Create a bot registration in the azure portal for the `parent` and update [parent/.env](parent/.env) with the `MicrosoftAppId` of the new bot registration.
+- Create a bot registration in the azure portal for the `parent` and update [parent/example.env](parent/example.env) with the `MicrosoftAppId` of the new bot registration.
 - Create a certificate, and upload it to the parent bot's App Registration https://ms.portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationMenuBlade/Credentials/appId/YourParentBotMicrosoftAppId/objectId//defaultBlade/Credentials/isMSAApp/ ([more info](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-certificate-credentials#register-your-certificate-with-microsoft-identity-platform))
-- Export the private key for the certificate, and overwrite [parent/private-key.pem](parent/private-key.pem).  Also update [parent/.env](parent.env) with the `CertificateThumbprint`.
-- Create a bot registration in the azure portal for the `child` and update [child/.env](child/.env) with the `MicrosoftAppId` and `MicrosoftAppPassword` of the new bot registration.
-- Update the `SkillAppId` variable in [parent/.env](parent/.env) with the `AppId` for the child skill you created in the previous step
-- Add the `parent` `MicrosoftAppId` to the `AllowedCallers` comma separated list in [child/.env](child/.env)
+- Export the private key for the certificate, and overwrite [parent/private-key.pem](parent/private-key.pem).  Also update [parent/example.env](parent.exampleenv) with the `CertificateThumbprint`.
+- Create a bot registration in the azure portal for the `child` and update [child/example.env](child/example.env) with the `MicrosoftAppId` and `MicrosoftAppPassword` of the new bot registration.
+- Update the `SkillAppId` variable in [parent/example.env](parent/example.env) with the `AppId` for the child skill you created in the previous step
+- Add the `parent` `MicrosoftAppId` to the `AllowedCallers` comma separated list in [child/example.env](child/example.env)
 - In a terminal, navigate to `.\child`
 
     ```bash
