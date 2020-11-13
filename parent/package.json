@@ -17,9 +17,9 @@
     },
     "dependencies": {
         "dotenv": "^8.2.0",
-        "botbuilder": "^4.8.0",
-        "botbuilder-dialogs": "^4.8.0",
-        "botframework-connector": "^4.8.0",
+        "botbuilder": "^4.11.0",
+        "botbuilder-dialogs": "^4.11.0",
+        "botframework-connector": "^4.11.0",
         "fs": "0.0.1-security",
         "path": "^0.12.7",
         "restify": "~8.4.0"
